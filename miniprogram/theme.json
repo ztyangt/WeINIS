@@ -1,0 +1,42 @@
+{
+  "light": {
+      "navBgColor": "#d5eae3",
+      "navTxtStyle": "black",
+      "bgColor": "#ffffff",
+      "bgTxtStyle": "light",
+      "bgColorTop": "#eeeeee",
+      "bgColorBottom": "#efefef",
+      "tabFontColor": "#8a8a8a",
+      "tabSelectedColor": "#1b6548",
+      "tabBgColor": "#ffffff",
+      "tabBorderStyle": "black",
+      "iconPath1": "images/tabbar/home1.png",
+      "selectedIconPath1": "images/tabbar/home0.png",
+      "iconPath2": "images/tabbar/topic1.png",
+      "selectedIconPath2": "images/tabbar/topic0.png",
+      "iconPath3": "images/tabbar/cross1.png",
+      "selectedIconPath3": "images/tabbar/cross0.png",
+      "iconPath4": "images/tabbar/user1.png",
+      "selectedIconPath4": "images/tabbar/user0.png"
+  },
+  "dark": {
+      "navBgColor": "#191919",
+      "navTxtStyle": "white",
+      "bgColor": "#1f1f1f",
+      "bgTxtStyle": "dark",
+      "bgColorTop": "#191919",
+      "bgColorBottom": "#1f1f1f",
+      "tabFontColor": "#ffffff",
+      "tabSelectedColor": "#1b6548",
+      "tabBgColor": "#191919",
+      "tabBorderStyle": "white",
+      "iconPath1": "images/tabbar/home1.png",
+      "selectedIconPath1": "images/tabbar/home0.png",
+      "iconPath2": "images/tabbar/topic1.png",
+      "selectedIconPath2": "images/tabbar/topic0.png",
+      "iconPath3": "images/tabbar/cross1.png",
+      "selectedIconPath3": "images/tabbar/cross0.png",
+      "iconPath4": "images/tabbar/user1.png",
+      "selectedIconPath4": "images/tabbar/user0.png"
+  }
+}
