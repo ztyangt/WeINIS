@@ -1,0 +1,17 @@
+<view class="banner-wrapper ~br">
+  <swiper class="banner ~wh-100"
+  indicator-dots="true"
+  indicator-color="#fff"
+  indicator-active-color="#1b6548"
+  autoplay="true"
+  vertical="true"
+  > 
+    <swiper-item>
+    <ImaLoad class="~wh-100" dataUrl="https://p3.qhimg.com/bdr/__85/t013bca639c12d48abb.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <ImaLoad class="~wh-100" dataUrl="https://p6.qhimg.com/bdr/__85/t01b257ace0f92ce90a.jpg" />
+    </swiper-item>
+  </swiper>
+
+</view>

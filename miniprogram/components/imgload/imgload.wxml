@@ -1,0 +1,8 @@
+<image class="lazy" wx:if="{{ !is_loaded }}" src="{{ lazy_img }}" mode=""/>
+  <image class="origin" 
+    onload="_imgLoaded" 
+    hidden="{{ !is_loaded }}" 
+    src="{{ dataUrl }}" 
+    lazy-load="{{ true }}" 
+    show-menu-by-longpress="{{ showMenu }}"
+    mode="{{ mode }}" />

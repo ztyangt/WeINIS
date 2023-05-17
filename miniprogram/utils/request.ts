@@ -108,8 +108,8 @@ class HttpRequest {
 				method: requestConfig.method,
 				url: `${requestConfig.url}`,
 				data: requestConfig.data,
-				header: Object.assign(header, requestConfig?.header),
-				dataType: !requestConfig.dataType ? 'json' : '其他',
+				header:  Object.assign(header, requestConfig.header),
+				// dataType: !requestConfig.dataType ? 'json' : '其他',
 				success: function (res) {
 					// console.log('发送返回:', res) //res:{cookies, data, header, statusCode}
 					const code = res.statusCode || -404

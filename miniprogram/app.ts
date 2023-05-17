@@ -4,9 +4,7 @@ import User from "./utils/api/user"
 
 App<IAppOption>({
   globalData: {},
-  async onLaunch() {
-    const res = await User.one(2)
-    console.log(res.data.nickname)
+  onLaunch() {
     // 展示本地存储能力
     // const logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())

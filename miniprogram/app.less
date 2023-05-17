@@ -1,16 +1,34 @@
 /**app.wxss**/
 page {
+  background-image: linear-gradient(to top, #fff 0%, #d5eae3 100%);
   --button-border-radius: 10px;
   --button-default-color: #f2f3f5;
   --toast-max-width: 100px;
   --toast-background-color: pink;
 }
+
+@media (prefers-color-scheme: dark) {
+  page {
+    background-image: linear-gradient(to top, #191919 0%, #191919 100%);
+  }
+}
+
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+  padding: 10rpx;
 } 
+
+.p-1 {
+  padding: 10rpx;
+}
+
+.w-100 {
+  width: 100%;
+}
+.wh-100 {
+  width: 100%;
+  height: 100%;
+}
+.br {
+  border-radius: 10rpx;
+  overflow: hidden;
+}
