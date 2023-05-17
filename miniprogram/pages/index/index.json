@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "Banner": "../../components/banner/banner"
+    "Banner": "../../components/banner/banner",
+    "Menu": "../../components/menu/menu",
+    "PostList": "../../components/postlist/postlist",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "mp-sticky": "@miniprogram-component-plus/sticky"
   }
 }

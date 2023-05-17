@@ -1,26 +1,43 @@
 /**app.wxss**/
 page {
-  background-image: linear-gradient(to top, #fff 0%, #d5eae3 100%);
-  --button-border-radius: 10px;
-  --button-default-color: #f2f3f5;
-  --toast-max-width: 100px;
-  --toast-background-color: pink;
+  background-attachment: fixed;
+  overflow: auto;
+  --pure-color: #fff;
+  --theme-color: #8c7bfd;
+  --theme-color-1: #eeebff;
+  --text-color: #323232;
+  --border-radius: 10rpx;
+  --tabs-line-height: 25px;
+  --tab-text-color: var(--text-color);
+  --tabs-line-height: 30px;
+  background-image: linear-gradient(to top, #fff 0%, #bab4e0 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   page {
+    --pure-color: #000;
     background-image: linear-gradient(to top, #191919 0%, #191919 100%);
   }
 }
 
 .container {
+  overflow: hidden;
   padding: 10rpx;
+  box-sizing: border-box;
 } 
 
 .p-1 {
   padding: 10rpx;
 }
-
+.pt-1 {
+  padding-top: 10rpx;
+}
+.mt-1 {
+  padding-top: 10rpx;
+}
+.mt-2 {
+  margin-top: 20rpx;
+}
 .w-100 {
   width: 100%;
 }
@@ -29,6 +46,27 @@ page {
   height: 100%;
 }
 .br {
-  border-radius: 10rpx;
+  border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+.p-1 {
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.p-2 {
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.p-3 {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
 }

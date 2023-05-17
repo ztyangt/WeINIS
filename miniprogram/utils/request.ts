@@ -70,9 +70,9 @@ class HttpRequest {
 
 	// 处理请求异常状态码
 	private handerErrorStatus(statusCode: number, requestConfig: RequestConfig) {
-		let msg = 'error'
+		let msg = '服务器错误'
 		if (statusCode === 502 || statusCode === 503) {
-			msg = 'error'
+			msg = '服务器错误'
 		}
 		!requestConfig.noShowMsg && wx.showToast({
 			title: `${msg}：${statusCode}`,

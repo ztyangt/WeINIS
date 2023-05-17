@@ -1,17 +1,14 @@
 <view class="banner-wrapper ~br">
-  <swiper class="banner ~wh-100"
-  indicator-dots="true"
-  indicator-color="#fff"
-  indicator-active-color="#1b6548"
-  autoplay="true"
-  vertical="true"
-  > 
-    <swiper-item>
-    <ImaLoad class="~wh-100" dataUrl="https://p3.qhimg.com/bdr/__85/t013bca639c12d48abb.jpg" />
-    </swiper-item>
-    <swiper-item>
-      <ImaLoad class="~wh-100" dataUrl="https://p6.qhimg.com/bdr/__85/t01b257ace0f92ce90a.jpg" />
-    </swiper-item>
-  </swiper>
-
+  <view class="banner ~wh-100">
+    <swiper class="~wh-100" indicator-dots="true" indicator-color="#fff" indicator-active-color="#1b6548" autoplay="true" vertical="true" 	easing-function="easeInOutCubic"
+    bindchange="bindchange"
+    >
+      <swiper-item class="swiper" wx:for="{{ banner_article }}" wx:key="id">
+        <ImaLoad class="~wh-100" dataUrl="{{ item.img_src }}" mode="aspectFill"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="title-wrapper ~p-2">
+    <text class="title">{{ banner_article[current_index].title }}</text>
+  </view>
 </view>

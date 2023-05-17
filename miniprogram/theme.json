@@ -1,13 +1,13 @@
 {
   "light": {
-      "navBgColor": "#d5eae3",
+      "navBgColor": "#bab4e0",
       "navTxtStyle": "black",
       "bgColor": "#ffffff",
       "bgTxtStyle": "light",
       "bgColorTop": "#eeeeee",
       "bgColorBottom": "#efefef",
       "tabFontColor": "#8a8a8a",
-      "tabSelectedColor": "#1b6548",
+      "tabSelectedColor": "#8c7bfd", 
       "tabBgColor": "#ffffff",
       "tabBorderStyle": "black",
       "iconPath1": "images/tabbar/home1.png",

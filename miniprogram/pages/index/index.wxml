@@ -1,6 +1,18 @@
 <!--index.wxml-->
 <view class="container">
+  <Banner />
+  <Menu class="mt-2 block" />
 
-<Banner />
+<mp-sticky >
+  <van-tabs class="tab-wrapper" active="{{ active }}" title-style="nav-title" border sticky bind:click="handleMenu">
+    <van-tab title="全部">全部</van-tab>
+    <van-tab 
+    wx:for="{{ sort_list }}"
+    wx:key="id"
+    title="{{ item.name }}"
+    />
+  </van-tabs>
 
+</mp-sticky>
+<PostList wx:if="{{ sort_list.length }}" sortId="{{ sort_list[current_index].id }}"/>
 </view>

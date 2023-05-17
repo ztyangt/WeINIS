@@ -1,0 +1,10 @@
+<!--components/postlist/postlist.wxml-->
+<view class="post-list ~br ~p-1 ~mt-2" wx:if="{{ post_list.length }}">
+
+  <view class="post" wx:for="{{ post_list }}" wx:key="id">
+    {{  item.title }}
+  </view>
+</view>
+
+
+

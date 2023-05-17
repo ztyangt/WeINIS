@@ -1,0 +1,23 @@
+<!--components/menu/menu.wxml-->
+<view class="menu-list ~br">
+  <view class="menu-item">
+    <image class="icon" src="../../images/svg/search.svg" mode=""/>
+    <text>搜索</text>
+  </view>
+  <view class="menu-item">
+    <image class="icon" src="../../images/svg/category.svg" mode=""/>
+    <text>分类</text>
+  </view>
+  <view class="menu-item">
+    <image class="icon" src="../../images/svg/file.svg" mode=""/>
+    <text>归档</text>
+  </view>
+  <view class="menu-item">
+    <image class="icon" src="../../images/svg/music.svg" mode=""/>
+    <text>音乐</text>
+  </view>
+  <view class="menu-item">
+    <image class="icon" src="../../images/svg/about.svg" mode=""/>
+    <text>关于</text>
+  </view>
+</view>

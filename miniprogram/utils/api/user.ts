@@ -9,7 +9,7 @@ export default class UserApi {
    * @param account 用户名
    * @param password 密码
    */
-  static login = (account: string, password: string) => {
+  static login(account: string, password: string) {
     return httpRequest.post<INIS.Login>("users/login", { account, password })
   }
 
@@ -18,15 +18,15 @@ export default class UserApi {
    * @param page 分页
    * @param limit 限制条目
    */
-  static all = (page: number, limit: number) => {
-    return httpRequest.get<INIS.UserAll>("users/all", { page, limit })
+  static all(page: number, limit: number) {
+    return httpRequest.get<INIS.UserList>("users/all", { page, limit })
   }
 
   /**
    * 获取单个用户
    * @param id 用户ID
    */
-  static one = (id: number) => {
+  static one (id: number) {
     return httpRequest.get<INIS.User>("users/one", { id })
   }
 }
