@@ -1,14 +1,29 @@
-<view class="banner-wrapper ~br">
-  <view class="banner ~wh-100">
-    <swiper class="~wh-100" indicator-dots="true" indicator-color="#fff" indicator-active-color="#1b6548" autoplay="true" vertical="true" 	easing-function="easeInOutCubic"
-    bindchange="bindchange"
-    >
-      <swiper-item class="swiper" wx:for="{{ banner_article }}" wx:key="id">
-        <ImaLoad class="~wh-100" dataUrl="{{ item.img_src }}" mode="aspectFill"/>
-      </swiper-item>
-    </swiper>
+<wxs src="../../utils/utils.wxs" module="utils" />
+
+    <view wx:if="{{ banner_article.length }}" class="banner-wrapper ~br">
+    <view class="today ~flex">
+      <view class="day">
+        {{ utils.day }}
+      </view>
+      <view>
+        <view class="date ~mb-1">
+          {{ utils.month }}
+        </view>
+        <view class="date">
+          {{ utils.year }}
+        </view>
+      </view>
+    </view>
+    <view class="banner ~wh-100">
+      <swiper class="~wh-100" indicator-dots="true" indicator-color="#fff" indicator-active-color="var(--theme-color)" autoplay="true" vertical="true" 	easing-function="easeInOutCubic"
+      bindchange="bindchange"
+      >
+        <swiper-item class="swiper" wx:for="{{ banner_article }}" wx:key="id">
+          <ImaLoad class="~wh-100" dataUrl="{{ item.img_src }}" showMenu="{{ false }}" mode="aspectFill"/>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="title-wrapper">
+      <text class="title">{{ banner_article[current_index].title }}</text>
+    </view>
   </view>
-  <view class="title-wrapper ~p-2">
-    <text class="title">{{ banner_article[current_index].title }}</text>
-  </view>
-</view>

@@ -6,5 +6,7 @@
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
     "mp-sticky": "@miniprogram-component-plus/sticky"
-  }
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 150
 }

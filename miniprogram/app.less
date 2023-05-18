@@ -3,9 +3,13 @@ page {
   background-attachment: fixed;
   overflow: auto;
   --pure-color: #fff;
+  --title-color: #131d21;
   --theme-color: #8c7bfd;
   --theme-color-1: #eeebff;
   --text-color: #323232;
+  --tiny-color: rgb(117, 117, 117);
+  --card-bg: #f1f0f9;
+  --shadow: rgba(7, 17, 27, 0.05) 0px 3px 8px 6px;
   --border-radius: 10rpx;
   --tabs-line-height: 25px;
   --tab-text-color: var(--text-color);
@@ -16,6 +20,8 @@ page {
 @media (prefers-color-scheme: dark) {
   page {
     --pure-color: #000;
+    --title-color: #d2dce0;
+    --shadow: 0px 2px 5px 1px rgb(15 15 15 / 20%);
     background-image: linear-gradient(to top, #191919 0%, #191919 100%);
   }
 }
@@ -25,7 +31,9 @@ page {
   padding: 10rpx;
   box-sizing: border-box;
 } 
-
+.shadow {
+  box-shadow: var(--shadow)
+}
 .p-1 {
   padding: 10rpx;
 }
@@ -37,6 +45,12 @@ page {
 }
 .mt-2 {
   margin-top: 20rpx;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
 }
 .w-100 {
   width: 100%;
@@ -61,6 +75,10 @@ page {
 .p-3 {
   padding: 20rpx;
   box-sizing: border-box;
+}
+
+.mb-1 {
+  margin-bottom: 5rpx;
 }
 
 .block {

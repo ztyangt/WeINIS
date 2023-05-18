@@ -1,10 +1,40 @@
 <!--components/postlist/postlist.wxml-->
-<view class="post-list ~br ~p-1 ~mt-2" wx:if="{{ post_list.length }}">
+<wxs src="../../utils/utils.wxs" module="utils" />
 
-  <view class="post" wx:for="{{ post_list }}" wx:key="id">
-    {{  item.title }}
+<view class="post-list ~br ~mt-2" wx:if="{{ post_list.length }}">
+
+  <view 
+  class="post ~shadow ~pr" 
+  wx:for="{{ post_list }}" 
+  wx:key="id" 
+  >
+      <view class="title">
+        {{ item.title }}
+      </view>
+      <view class="detail ~flex">
+        <view class="detail-item">
+          <van-icon name="clock-o" />
+          {{ utils.subDate(item.create_time) }}
+        </view>
+        <view class="detail-item">
+          <van-icon name="chat-o" />
+          {{ item.expand.comments.count }}
+        </view>
+      </view>
+      <view class="desc">
+        <text class="description">{{ item.description }}</text>
+        <!-- <ImgLoad class="post-cover" dataUrl="{{ item.img_src }}" /> -->
+      </view>
+
+      <view class="post-cover">
+        <image class="img ~wh-100" src="{{ item.img_src }}" mode=""/>
+      </view>
+
   </view>
 </view>
+
+<van-empty wx:if="{{ post_list.length === 0 }}" image="../../../../images/svg/empty.svg" description="该分类暂无文章" />
+
 
 
 

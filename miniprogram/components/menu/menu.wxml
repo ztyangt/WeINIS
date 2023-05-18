@@ -5,8 +5,8 @@
     <text>搜索</text>
   </view>
   <view class="menu-item">
-    <image class="icon" src="../../images/svg/category.svg" mode=""/>
-    <text>分类</text>
+    <image class="icon" src="../../images/svg/album.svg" mode=""/>
+    <text>相册</text>
   </view>
   <view class="menu-item">
     <image class="icon" src="../../images/svg/file.svg" mode=""/>

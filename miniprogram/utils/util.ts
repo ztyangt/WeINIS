@@ -17,3 +17,10 @@ const formatNumber = (n: number) => {
   const s = n.toString()
   return s[1] ? s : '0' + s
 }
+export const clearStorage = (prefix: string) => {
+  wx.getStorageInfoSync().keys.forEach(key => {
+    if (key.startsWith(prefix)) {
+      wx.removeStorageSync(key);
+    }
+  });
+}

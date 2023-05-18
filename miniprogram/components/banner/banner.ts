@@ -5,6 +5,7 @@ import Article from "../../utils/api/article"
 interface IComponentData {
   banner_article: INIS.Article[];
   current_index: number;
+  isReady: boolean 
 }
 
 Component<IComponentData,any,any>({
@@ -13,7 +14,10 @@ Component<IComponentData,any,any>({
    * 组件的属性列表
    */
   properties: {
-
+    refresh: {
+      type: Boolean,
+      value: false
+    }
   },
 
   /**
@@ -21,7 +25,8 @@ Component<IComponentData,any,any>({
    */
   data: {
     banner_article: [],
-    current_index: 0
+    current_index: 0,
+    isReady: false
   },
 
   /**
@@ -48,8 +53,18 @@ Component<IComponentData,any,any>({
     },
 
     bindchange: function(e:any) {
+        this.setData({
+          current_index: e.detail.current ? e.detail.current : 0
+        })
+
+    }
+  },
+
+  observers: {
+    'refresh': function() {
+      this.initData()
       this.setData({
-        current_index: e.detail.current
+        current_index: 0
       })
     }
   }

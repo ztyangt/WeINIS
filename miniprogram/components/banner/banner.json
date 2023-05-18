@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "ImaLoad": "../imgload/imgload"
+    "ImaLoad": "../imgload/imgload",
+    "van-skeleton": "@vant/weapp/skeleton/index"
   }
 }

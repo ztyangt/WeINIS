@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-  <Banner />
+  <Banner refresh="{{ refresh }}" />
+  
   <Menu class="mt-2 block" />
 
 <mp-sticky >
@@ -14,5 +15,5 @@
   </van-tabs>
 
 </mp-sticky>
-<PostList wx:if="{{ sort_list.length }}" sortId="{{ sort_list[current_index].id }}"/>
+<PostList wx:if="{{ sort_list.length }}" sortId="{{ sort_list[current_index] ?sort_list[current_index].id : 0 }}" refresh="{{refresh}}" />
 </view>

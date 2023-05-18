@@ -20,7 +20,7 @@ export default class ArticleApi {
    * @param limit 限制条目
    * @param mode 渲染模式(html,md)
    */
-  static all(page: number, limit: number = 10, mode: string = 'html', sortId?: number) {
+  static all(page: number = 1, limit: number = 10, mode: string = 'html', sortId?: number) {
     return httpRequest.get<INIS.ArticleList>("article/sql", { 
       page, 
       limit, 

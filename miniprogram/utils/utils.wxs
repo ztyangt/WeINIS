@@ -1,0 +1,35 @@
+var subStr = function (val, start, stop) {
+  if (val) {
+    return val.substring(start, stop)
+  } else {
+    return ''
+  }
+}
+
+var subDate = function (val) {
+  if (val) {
+    return val.substring(0, 10)
+  } else {
+    return ''
+  }
+}
+
+var months = [
+  'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+  'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'
+];
+
+
+var now = getDate();
+var day = now.getDate();
+var month = months[now.getMonth() ];  
+var year = now.getFullYear();
+
+module.exports = {
+  subStr: subStr,
+  subDate: subDate,
+  day: day,
+  month: month,
+  year: year
+};
+
